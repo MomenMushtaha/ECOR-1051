@@ -1,0 +1,88 @@
+ECOR 1051 Lab 2 Solution Template
+
+Author: Mo'min Mushtaha
+
+This file is to be used in conjunction with the detailed lab description for Lab 2.
+Use this file to enter your answers to the series of exercises you will complete.
+
+==========
+Exercise 1 
+
+What is the name of the frame containing variable "area_of_disk"?  global frame
+
+What does variable "area_of_disk" refer to? the function that will be called by assigning it to a new variable "area"
+
+What is the name of the frame containing parameter "radius"? area_of_desk.
+
+When does the frame appear in the memory diagram? when you execute the code
+
+What is the type and value of the variable "radius"? Where did that value come from? type float the value came from bounding the 5.0 value to parameter radius when calling function using new assigned variable area
+
+How does PyTutor depict the value the function will return? the defined function math.pi is multiplied by the value given to the radius in the following line assigned to the variable area
+
+When does the frame containing "radius" disappear? when the code is done and the return value of 78.5398 is given then assigned to the variable area
+
+What is the name of the frame containing the variable "area"? global frame
+
+When does "area" appear in the frame? after the return value is given so the next step after that is the when the variable will appear
+
+What is the type and value of "area"? Where did that value come from?  type float value 78.5398 it came from the calling of the function area_of_disk and thus after the return statement the value was asssigned to the variable area
+
+
+==========
+Exercise 2 
+
+What value does "area_of_disk" return each time it is called? 78.5398
+
+
+==========
+Exercise 3
+
+What is the name of the frame containing parameters "inner" and "outer"? area_of_ring
+
+When does the frame appear in the memory diagram? after the function area_of_disk appears in the global frame step 5 of 13
+
+What are the types and values of the variables "inner" and "outer"? float
+
+What caused those values to be bound to "inner" and "outer"? when called on by the variable area to call the function area_of_ring
+
+What is the name of the frame containing parameter "radius"? area_of_disk
+
+When does that frame appear in the memory diagram? How many times does it appear? after the area_of_ring frame appeared because the return value of the function area_of_ring uses the funciton area_of_disk it appears 2 times 
+
+Each time the frame containing "radius" appears, what is the type and value bound to "radius"? the first time it is the outter variable value which is a float value of 10.0 and the second time it is the inner variable value of 5.0
+What caused that value to be bound to "radius"? because they used the area_of_disk function and wrote the parameter outter and inner as variables for the radius so when the area_of_ring function is called later by the variable area the values 10.0 and 5.0 were assigned to outtter and inner parameters resectively
+
+When does the frame containing "radius" disappear? final step when the return value of 235.6194 is given
+
+When does the frame containing "inner" and "outer" disappear? when the code is done executing
+
+What is the name of the frame containing the variable "area"? global frame
+
+When does "area" appear in the frame? when the code is done executing
+
+What is the type and value of the variable "area"? What caused that
+value to be bound to "area"? type float value 235.6194 it came from calling the function area_of_ring with the parameters 10.0 and 5.0 as outer and inner values respectively
+
+
+==========
+Exercise 4 
+
+What is the type and value of the object returned by the function when there is
+no return statement? type None, value None
+
+
+==========
+Exercise 5
+
+When "cube" is called, but before Python executes x = x ** 3, what value is
+bound to parameter "x"? What value is bound to variable "a"? the value is 2 for both parameters
+
+After Python executes x = x ** 3, but before the function returns, what value
+is bound to parameter "x"? What value is bound to variable "a"? value 8 for variable x and value 2 for variable a
+
+In Python code, does assigning a value to a function's parameter change the 
+corresponding function argument? NO
+
+==========
+Last edited: 7 Jan. 2020
